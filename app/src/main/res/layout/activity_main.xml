@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="person"
+            type="com.mainpackage.databindinglayouts.Person" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <include
+            layout="@layout/secondary_layout"
+            bind:person="@{person}"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
